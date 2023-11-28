@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WEB-115 Final Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="banner">
+      <h1>Your Name - WEB-115</h1>
+      <h2>Build Your Meal Plan</h2>
+    </div>
+  </header>
+
+  <main>
+    <form id="mealPlanForm">
+      <div class="personal-info">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="goal">Weekly Goal:</label>
+        <input type="text" id="goal">
+      </div>
+
+      <div class="day-selector">
+        <button id="mondayButton">Monday</button>
+        <button id="tuesdayButton">Tuesday</button>
+        <button id="wednesdayButton">Wednesday</button>
+        <button id="thursdayButton">Thursday</button>
+        <button id="fridayButton">Friday</button>
+        <button id="saturdayButton">Saturday</button>
+        <button id="sundayButton">Sunday</button>
+      </div>
+
+      <div class="meal-options" id="mealOptions">
+        <!--Content for Monday-->
+        <div class="day-option" id="mondayOptions">
+          <h3>Monday</h3>
+          <!-- Add meal input fields for Monday -->
+        </div>
+
+        <!--Content for Tuesday-->
+        <div class="day-option" id="tuesdayOptions" style="display: none;">
+          <h3>Tuesday</h3>
+          <!-- Add meal input fields for Tuesday -->
+        </div>
+        <!-- Repeat similar sections for other days -->
+      </div>
+
+      <div class="buttons">
+        <button type="button" onclick="generateMealPlan()">Generate Meal Plan</button>
+        <button type="button" onclick="clearMealPlan()">Clear Planner</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="projectJS.js"></script>
+</body>
+</html>
