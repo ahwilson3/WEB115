@@ -61,6 +61,11 @@
     cursor: pointer;
     font-size: 16px;
   }
+
+ #ctaMain {
+background-color: #2e86de;
+color: #f4f4f4;
+  }
   
   button:hover {
     opacity: 0.8;
